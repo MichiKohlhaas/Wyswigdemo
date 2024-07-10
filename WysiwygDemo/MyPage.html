@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="wwwroot\lib\tinymce\tinymce.min.js" referrerpolicy="origin"></script>
+    <script>
+      tinymce.init({
+          selector: '#mytextarea',
+          plugins: 'table lists advlist',
+          toolbar: 'undo redo | styles | bold italic | alignleft aligncenter alignright alignjustify | outdent indent | numlist bullist',
+        license_key: 'gpl'
+      });
+    </script>
+</head>
+
+<body>
+    <form method="post">
+        <textarea id="mytextarea">
+<p>There's a lot you can do with the WYSIWYG editor, from bullets to tables and <span style=\" color:#ff0000;\">font styling</span>.</p><p> </p><p> </p><table border="1" width="300" cellspacing="0" cellpadding="3" bgcolor="#ffffff"><tr><td><p>Create a table</p></td> <td><p>to organize a lot</p></td></tr><tr><td><p>of information</p></td> <td><p>for quick browsing</p></td></tr></table>
+</textarea>
+    </form>
+</body>
+</html>
